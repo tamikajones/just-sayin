@@ -18,7 +18,7 @@
             
             <h1>Just Sayin'</h1>
             
-            <p style="margin-top:40px;">Just Wanted to tell you...</p>
+            <p style="margin-top:40px;">Girls Who Code is Awesome!</p>
         
         </div>
         
@@ -31,7 +31,25 @@
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<center><button onclick="myFunction()">Click Me First!!!</button>
+<br><br>
+<button onclick="myFunction2()">CLICK ME NEXT!!!</button></center>
+
+<p id="demo"></p>
+
+<script>
+    var person = prompt("Hi enter your name!", "Type here");
     
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Howdy " + person + " you are a beautiful unicorn!";
+    }
+
+function myFunction2() {
+    alert("Howdy\nI am a country computer.");
+}
+</script>
+
 </body>
 
 </html>
