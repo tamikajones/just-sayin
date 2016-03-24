@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
 
 <head>
@@ -8,47 +8,90 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+    <body style="background-color:pink;">
 </head>
 
 <body>
 
     <div class="container" style="text-align:center; padding:100px;">
-        
+
         <div class="jumbotron">
-            
+
             <h1>Just Sayin'</h1>
-            
+
             <p style="margin-top:40px;">Girls Who Code is Awesome!</p>
-        
+<script>   var add = (function() {
+                var counter = 0;
+                return function() {
+                    return counter += 1;
+                }
+            })();
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = add();
+            }</script>
         </div>
-        
+        <input type="text" id="name" />
         <p>By: Tamika</p>
-        
+        <p class="mainAlert" style="button">
+        </p>
+      
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<center><button onclick="myFunction()">Click Me First!!!</button>
-<br><br>
-<button onclick="myFunction2()">CLICK ME NEXT!!!</button></center>
+    <center>
 
-<p id="demo"></p>
+    </center>
 
-<script>
-    var person = prompt("Hi enter your name!", "Type here");
-    
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Howdy " + person + " you are a beautiful unicorn!";
-    }
+    <p id="demo"></p>
 
-function myFunction2() {
-    alert("Howdy\nI am a country computer.");
-}
-</script>
+    <button type="button" onclick="myFunction()">Count!</button>
+
+    <p id="demo">0</p>
+
+
+    <style>
+        button {
+            padding: 14px 24px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #66004d;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        button:hover {
+            background-color: #4d0039
+        }
+        
+        button:active {
+            background-color: #e600a8;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+
+    <link rel="stylesheet" href="lib/animate.css">
+    <script src="lib/wow.js"></script>
+    <script src="lib/app.js"></script>
+
+    <div id="countAlert" style="displaynone,">
+        You have been told before <span id="number">XX</span> times
+    </div>
+
+
+
+
+
+
 
 </body>
 
